@@ -1,0 +1,44 @@
+html {
+    font-family: "SF Display", "Helvetica", sans-serif;
+}
+
+.preload {
+    padding: 60px;
+    color: #ffffff;
+    background: #000000;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#afterLoad {
+    display: none;
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    text-align: center;
+}
+
+.lock {
+    font-size: 1.7rem;
+    color: #ffffff;
+}
+
+.clock {
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+.date {
+    font-weight: 200;
+    font-size: 1.4rem;
+}
