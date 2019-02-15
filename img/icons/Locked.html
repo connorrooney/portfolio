@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Locked</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./Locked_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Locked_files/animate.min.css">
+    <link rel="stylesheet" href="./Locked_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Locked_files/font.css">
+    <link rel="stylesheet" href="./Locked_files/main.css">
+  </head>
+  <body onload="clockDisplay()" cz-shortcut-listen="true">
+      <div id="preLoad" class="preload">
+        <div class="mini">
+            <div class="miniL">
+              <p><i class="fas fa-signal"></i><span id="carrier"> Carrier </span><i class="fas fa-wifi"></i></p><p>
+            </p></div>
+
+            <div class="miniR">
+                <p><span>72% </span><i class="fas fa-battery-three-quarters"></i></p>
+            </div>
+        </div>
+
+        <div class="header">
+            <i id="lock" class="fas fa-lock lock"></i>
+            <h1 id="clock" class="clock">17:29</h1>
+            <h4 id="date" class="date">Friday 15 February</h4>
+        </div>
+
+        <div class="footer">
+            <h1 class="unlock animated pulse slower">click to unlock</h1>
+        </div>
+
+      </div>
+      <div id="afterLoad" class="content">
+        <div class="mini">
+          <div class="miniL">
+            <p><i class="fas fa-signal"></i><span id="carrier"> Carrier </span><i class="fas fa-wifi"></i></p><p>
+          </p></div>
+
+          <div class="miniR">
+              <p><span>72% </span><i class="fas fa-battery-three-quarters"></i></p>
+          </div>
+        </div>
+        <div class="main animated zoomIn">
+
+          <div class="appCont">
+            <div class="app cyberPet" id="cyberPet"></div>
+            <span class="appCap">CyberPet</span>
+          </div>
+
+          <div class="appCont">
+            <div class="app keyCode" id="keyCode"></div>
+            <span class="appCap">KeyCode</span>
+          </div>
+
+          <div class="appCont">
+            <div class="app diceRoll" id="diceRoll"></div>
+            <span class="appCap">Dice Roller</span>
+          </div>          
+          
+          <div class="appCont">
+            <div class="app whackAmole" id="whackAmole"></div>
+            <span class="appCap">Mole Whack</span>
+          </div>
+
+          <div class="appCont">
+            <div class="app jsClock" id="jsClock"></div>
+            <span class="appCap">Js Clock</span>
+          </div>
+
+        </div>
+
+        <div class="quickBar">
+            <div class="quickBar animated fadeInUp fastest">
+            <div class="appCont">
+              <div class="app gitHub" id="gitHub"></div>
+              <span class="appCap">GitHub.io</span>
+            </div>
+            
+            <div class="appCont">
+              <div class="app " id="gitHub"></div>
+              <span class="appCap">Sample</span>
+            </div>
+
+            <div class="appCont">
+              <div class="app " id="gitHub"></div>
+              <span class="appCap">Sample</span>
+            </div>
+
+            <div class="appCont">
+              <div class="app " id="gitHub"></div>
+              <span class="appCap">Sample</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="toast" id="toast" style="display: none;">
+            <div class="toastHead">
+                <h4><i class="far fa-lemon"></i> The Header</h4>
+            </div>
+            <div class="toastBody">
+              <p>The Content of the toast. its not much yet but just you wait.</p>
+            </div>
+          </div>
+        
+      </div>
+    
+    <script src="./Locked_files/main.js"></script>
+    <script src="./Locked_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./Locked_files/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="./Locked_files/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
