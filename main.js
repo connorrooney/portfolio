@@ -4,24 +4,21 @@ const lock = document.getElementById("lock");
 const clock = document.getElementById("clock");
 const date = document.getElementById("date")
 
+const gitHub = document.getElementById("gitHub");
+
+//"Lock Screen" activator
 preLoad.addEventListener("click", () => {
-    lockSwitch();
-    setTimeout("display();", 500);
+    document.head.title.textContent = "Connor Rooney"
+    lock.className = "fas fa-lock-open lock";
+    setTimeout("display()", 250)
 });
 
-function lockSwitch() {
-    lock.className = "fas fa-lock-open lock";
-
-};
-
+//Clock and Date display
 function display() {
-    preLoad.style.display = "none";
+    preLoad.className = "preLoad animated fadeOutUpBig slower"
+    setTimeout(() => {preLoad.style.display = "none"}, 100)
     afterLoad.style.display = "block"
 }
-
-function pageSwitch() {
-
-};
 
 function clockDisplay() {
     let d = new Date();
@@ -39,3 +36,10 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
 }
+
+
+//Tool Tips
+
+gitHub.addEventListener("mouseover", () => {
+    
+})

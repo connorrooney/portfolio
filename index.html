@@ -14,7 +14,13 @@
   <body onload="clockDisplay()">
       <div id=preLoad class=preload>
         <div class=mini>
+            <div class=miniL>
+              <p><i class="fas fa-signal"></i><span id=carrier> Carrier </span><i class="fas fa-wifi"></i><p>
+            </div>
 
+            <div class=miniR>
+                <p><span>72% </span><i class="fas fa-battery-three-quarters"></i></p>
+            </div>
         </div>
 
         <div class=header>
@@ -24,13 +30,75 @@
         </div>
 
         <div class=footer>
-            <h1>click to unlock</h1>
+            <h1 class="unlock animated pulse slower">click to unlock</h1>
         </div>
 
       </div>
       <div id=afterLoad class=content>
-          Empty
+        <div class=mini>
+          <div class=miniL>
+            <p><i class="fas fa-signal"></i><span id=carrier> Carrier </span><i class="fas fa-wifi"></i><p>
+          </div>
+
+          <div class=miniR>
+              <p><span>72% </span><i class="fas fa-battery-three-quarters"></i></p>
+          </div>
+        </div>
+        <div class="main animated zoomIn">
+
+          <div class=appCont>
+            <div class="app cyberPet" id=cyberPet></div>
+            <span class=appCap>CyberPet</span>
+          </div>
+
+          <div class=appCont>
+            <div class="app keyCode" id=keyCode></div>
+            <span class=appCap>KeyCode</span>
+          </div>
+
+          <div class=appCont>
+            <div class="app diceRoll" id=diceRoll></div>
+            <span class=appCap>Dice Roller</span>
+          </div>          
+          
+          <div class=appCont>
+            <div class="app whackAmole" id=whackAmole></div>
+            <span class=appCap>Mole Whack</span>
+          </div>
+
+          <div class=appCont>
+            <div class="app jsClock" id=jsClock></div>
+            <span class=appCap>Js Clock</span>
+          </div>
+
+        </div>
+
+        <div class=quickBar>
+            <div class="quickBar animated fadeInUp fastest">
+            <div class=appCont>
+              <div class="app gitHub" id=gitHub></div>
+              <span class=appCap>GitHub.io</span>
+            </div>
+            
+            <div class=appCont>
+              <div class="app " id=gitHub></div>
+              <span class=appCap>Sample</span>
+            </div>
+
+            <div class=appCont>
+              <div class="app " id=gitHub></div>
+              <span class=appCap>Sample</span>
+            </div>
+
+            <div class=appCont>
+              <div class="app " id=gitHub></div>
+              <span class=appCap>Sample</span>
+            </div>
+          </div>
+        </div>
       </div>
+
+
     
     <script src="./main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
