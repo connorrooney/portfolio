@@ -12,7 +12,6 @@ const close = document.getElementById("close");
 
 const gitHub = document.getElementById("gitHub");
 const mail = document.getElementById("mail")
-const
 const diceRoll = document.getElementById("diceRoll");
 const diceRollIcon = document.getElementById("diceRollTx");
 const moleWhack = document.getElementById("whackAmole");
