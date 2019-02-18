@@ -1,9 +1,11 @@
 const preLoad = document.getElementById("preLoad");
-const afterLoad = document.getElementById("afterLoad")
+const afterLoad = document.getElementById("afterLoad");
+const quickBar = document.getElementById("quickBar");
 const lock = document.getElementById("lock");
 const clock = document.getElementById("clock");
-const date = document.getElementById("date")
+const date = document.getElementById("date");
 const toast = document.getElementById("toast");
+const close = document.getElementById("close");
 
 const gitHub = document.getElementById("gitHub");
 
@@ -19,7 +21,8 @@ preLoad.addEventListener("click", () => {
 function display() {
     preLoad.className = "preLoad animated fadeOutUpBig slower"
     setTimeout(() => {preLoad.style.display = "none"}, 100)
-    afterLoad.style.display = "block"
+    afterLoad.style.display = "block";
+    quickBar.style.display = "block";
 }
 
 function clockDisplay() {
@@ -41,6 +44,16 @@ function checkTime(i) {
 
 
 //Tool Tips
+function intro() {
+    intro.style.display = "block";
+    setTimeout( () => {
+        intro.style.display = "none"
+    }, 7000);
+}
+
+close.addEventListener("click", () => {
+    toast.style.display = "none";
+})
 
 gitHub.addEventListener("mouseover", () => {
     toast.style.display = "block";

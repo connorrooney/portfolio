@@ -13,12 +13,12 @@ html {
     min-height: 100vh;
     overflow: hidden;
 
-    display: none;
+    display: block;
 }
 
 #afterLoad {
     display: block;
-    background: #ffc008;
+    background-image: linear-gradient(to top right, #FB872B, #D9E021);
     height: 100vh;
 }
 
@@ -155,6 +155,11 @@ html {
     height: 125px;
     width: 100%;
     padding-top: 13px;
+
+}
+
+#quickBar{
+    display: none;
 }
 
 .toast{
@@ -177,4 +182,15 @@ html {
 
 .toastBody{
     padding-left: 6px;
+}
+
+#close{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 1.3rem;
+}
+
+#close:hover {
+    color: #636363; 
 }
