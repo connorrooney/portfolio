@@ -148,6 +148,7 @@ html {
     background-image: linear-gradient(to top right, #ED1C24, #FCEE21);
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .whackAmole {
