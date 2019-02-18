@@ -1,5 +1,4 @@
 const preLoad = document.getElementById("preLoad");
-<<<<<<< HEAD
 const afterLoad = document.getElementById("afterLoad");
 const quickBar = document.getElementById("quickBar");
 const lock = document.getElementById("lock");
@@ -7,13 +6,6 @@ const clock = document.getElementById("clock");
 const date = document.getElementById("date");
 const toast = document.getElementById("toast");
 const close = document.getElementById("close");
-=======
-const afterLoad = document.getElementById("afterLoad")
-const lock = document.getElementById("lock");
-const clock = document.getElementById("clock");
-const date = document.getElementById("date")
-const toast = document.getElementById("toast");
->>>>>>> 865b8950125c9779f30aaaec11365a881622bd82
 
 const gitHub = document.getElementById("gitHub");
 
@@ -29,12 +21,8 @@ preLoad.addEventListener("click", () => {
 function display() {
     preLoad.className = "preLoad animated fadeOutUpBig slower"
     setTimeout(() => {preLoad.style.display = "none"}, 100)
-<<<<<<< HEAD
     afterLoad.style.display = "block";
     quickBar.style.display = "block";
-=======
-    afterLoad.style.display = "block"
->>>>>>> 865b8950125c9779f30aaaec11365a881622bd82
 }
 
 function clockDisplay() {
@@ -56,7 +44,6 @@ function checkTime(i) {
 
 
 //Tool Tips
-<<<<<<< HEAD
 function intro() {
     intro.style.display = "block";
     setTimeout( () => {
@@ -67,8 +54,6 @@ function intro() {
 close.addEventListener("click", () => {
     toast.style.display = "none";
 })
-=======
->>>>>>> 865b8950125c9779f30aaaec11365a881622bd82
 
 gitHub.addEventListener("mouseover", () => {
     toast.style.display = "block";

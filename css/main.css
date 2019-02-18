@@ -13,20 +13,12 @@ html {
     min-height: 100vh;
     overflow: hidden;
 
-<<<<<<< HEAD
     display: block;
-=======
-    display: none;
->>>>>>> 865b8950125c9779f30aaaec11365a881622bd82
 }
 
 #afterLoad {
     display: block;
-<<<<<<< HEAD
     background-image: linear-gradient(to top right, #FB872B, #D9E021);
-=======
-    background: #ffc008;
->>>>>>> 865b8950125c9779f30aaaec11365a881622bd82
     height: 100vh;
 }
 
@@ -163,14 +155,11 @@ html {
     height: 125px;
     width: 100%;
     padding-top: 13px;
-<<<<<<< HEAD
 
 }
 
 #quickBar{
     display: none;
-=======
->>>>>>> 865b8950125c9779f30aaaec11365a881622bd82
 }
 
 .toast{
@@ -193,7 +182,6 @@ html {
 
 .toastBody{
     padding-left: 6px;
-<<<<<<< HEAD
 }
 
 #close{
@@ -205,6 +193,4 @@ html {
 
 #close:hover {
     color: #636363; 
-=======
->>>>>>> 865b8950125c9779f30aaaec11365a881622bd82
 }
