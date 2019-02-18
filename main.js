@@ -5,6 +5,9 @@ const lock = document.getElementById("lock");
 const clock = document.getElementById("clock");
 const date = document.getElementById("date");
 const toast = document.getElementById("toast");
+const toastTitle = document.getElementById("toastTitle");
+const toastDesc = document.getElementById("toastDesc");
+const toastIcon = document.getElementById("toastIcon")
 const close = document.getElementById("close");
 
 const gitHub = document.getElementById("gitHub");
@@ -48,7 +51,8 @@ function checkTime(i) {
 
 //Tool Tips
 function intro() {
-    intro.style.display = "block";
+    toast.style.display = "block";
+    
     setTimeout( () => {
         intro.style.display = "none"
     }, 7000);
