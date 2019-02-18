@@ -42,6 +42,9 @@ function checkTime(i) {
     return i;
 }
 
+//App Animations
+
+
 
 //Tool Tips
 function intro() {

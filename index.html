@@ -47,27 +47,27 @@
         <div class="main animated zoomIn">
 
           <div class=appCont>
-            <div class="app cyberPet" id=cyberPet></div>
+            <div class="app cyberPet" id=cyberPet><i class="fas fa-paw"></i></div>
             <span class=appCap>CyberPet</span>
           </div>
 
           <div class=appCont>
-            <div class="app keyCode" id=keyCode></div>
+            <div class="app keyCode" id=keyCode><i id=keyBot class="far fa-keyboard"></i></div>
             <span class=appCap>KeyCode</span>
           </div>
 
           <div class=appCont>
-            <div class="app diceRoll" id=diceRoll></div>
+            <div class="app diceRoll" id=diceRoll><i id=diceRollTx class="fas fa-dice-five"></i></div>
             <span class=appCap>Dice Roller</span>
           </div>          
           
           <div class=appCont>
-            <div class="app whackAmole" id=whackAmole></div>
+            <div class="app whackAmole" id=whackAmole><i class="fas fa-gavel"></i></div>
             <span class=appCap>Mole Whack</span>
           </div>
 
           <div class=appCont>
-            <div class="app jsClock" id=jsClock></div>
+            <div class="app jsClock" id=jsClock><i class="far fa-clock"></i></div>
             <span class=appCap>Js Clock</span>
           </div>
 
@@ -76,18 +76,18 @@
         <div class=quickBar id=quickBar>
             <div class="quickBar animated fadeInUp fastest">
             <div class=appCont>
-              <div class="app gitHub" id=gitHub></div>
+              <div class="app gitHub" id=gitHub><i class="fab fa-github"></i></div>
               <span class=appCap>GitHub.io</span>
             </div>
             
             <div class=appCont>
-              <div class="app " id=gitHub></div>
-              <span class=appCap>Sample</span>
+              <div class="app mail" id=mail><i class="far fa-envelope"></i></div>
+              <span class=appCap>Mail</span>
             </div>
 
             <div class=appCont>
-              <div class="app " id=gitHub></div>
-              <span class=appCap>Sample</span>
+              <div class="app aboutMe" id=aboutMe><i class="fas fa-info-circle"></i></div>
+              <span class=appCap>About Me</span>
             </div>
 
             <div class=appCont>
@@ -99,13 +99,14 @@
 
         <div class=toast id=toast>
           <div class=toastHead>
-            <h4><i class="far fa-lemon"></i> The Header</h4>
+            <h4><i id=toastIcon class="far fa-lemon"></i><span id=toastTitle> The Header</span></h4>
             <span id=close><i class="fas fa-times"></i></span>
           </div>
           <div class=toastBody>
-            <p>The Content of the toast. its not much yet but just you wait.</p>
+            <p id=toastDesc>The Content of the toast. its not much yet but just you wait.</p>
           </div>
-        </div>        
+        </div>  
+
       </div>
     
     <script src="./main.js"></script>
