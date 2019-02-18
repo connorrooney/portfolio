@@ -11,13 +11,17 @@ const toastIcon = document.getElementById("toastIcon")
 const close = document.getElementById("close");
 
 const gitHub = document.getElementById("gitHub");
-const mail = document.getElementById("mail")
+const mail = document.getElementById("mail");
+const mailIcon = document.getElementById("mailIcon");
 const diceRoll = document.getElementById("diceRoll");
 const diceRollIcon = document.getElementById("diceRollTx");
 const moleWhack = document.getElementById("whackAmole");
 const moleWhackIcon = document.getElementById("hammer");
 const keyCode = document.getElementById("keyCode");
+const keyCodeIcon = document.getElementById("keyCodeIcon");
 const cyberPet = document.getElementById("cyberPet");
+const cyberPetIcon = document.getElementById("cyberPetIcon");
+const jsClock = document.getElementById("jsClock");
 
 
 
@@ -80,9 +84,10 @@ close.addEventListener("click", () => {
 
 gitHub.addEventListener("mouseenter", () => {
     toast.style.display = "block";
-    toastDesc.textContent = "This is some differnt contenet to test is it works";
+    toastTitle.textContent = "My GitHub"; 
+    toastDesc.textContent = "Check out all my public repositories on my GitHub page.";
     toastIcon.className = "fab fa-github";
-    toastTitle.textContent = "My GitHub"
+
 })
 
 gitHub.addEventListener("mouseleave", () => {
@@ -115,6 +120,7 @@ moleWhack.addEventListener("mouseleave", () => {
 })
 
 keyCode.addEventListener("mouseenter", () => {
+    keyCodeIcon.className = "fas fa-keyboard"
     toast.style.display = "block";
     toastTitle.textContent = "KeyCode Generator";
     toastDesc.textContent = "Simple KeyCode generator, Input a key and it will return with the event codes."
@@ -122,10 +128,12 @@ keyCode.addEventListener("mouseenter", () => {
 })
 
 keyCode.addEventListener("mouseleave", () => {
+    keyCodeIcon.className = "far fa-keyboard"
     toast.style.display = "none";
 })
 
 cyberPet.addEventListener("mouseenter", () => {
+    cyberPetIcon.className = "fas fa-paw animated tada slow infinite";
     toast.style.display =  "block";
     toastTitle.textContent = "My Cyber Pet";
     toastDesc.textContent = "Your very own virtual pet. Use console commands to take care of your pet. Keep them alive for as long as possible.";
@@ -133,9 +141,30 @@ cyberPet.addEventListener("mouseenter", () => {
 })
 
 cyberPet.addEventListener("mouseleave", () => {
+    cyberPetIcon.className = "fas fa-paw";
     toast.style.display = "none"
 })
 
 mail.addEventListener("mouseenter", () => {
+    mailIcon.className = "far fa-envelope-open";
+    toast.style.display = "block";
+    toastTitle.textContent = "Get in touch"
+    toastDesc.textContent = "If you have any questions about me or my work please email me by clicking the link."
+    toastIcon.className = "far fa-envelope"
+})
 
+mail.addEventListener("mouseleave", () => {
+    mailIcon.className = "far fa-envelope";
+    toast.style.display = "none";
+})
+
+jsClock.addEventListener("mouseenter", () => {
+    toast.style.display = "block";
+    toastTitle.textContent = "JavaScript Clock"
+    toastDesc.textContent = "It tells the time and looks pretty, what else could you ask for?"
+    toastIcon.className = "far fa-clock"
+})
+
+jsClock.addEventListener("mouseleave", () => {
+    toast.style.display = "none";
 })
