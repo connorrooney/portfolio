@@ -17,13 +17,26 @@ a, a:hover, a:visited, a:active, a:link {
     min-height: 100vh;
     overflow: hidden;
 
-    display: block;
+    display: none;
 }
 
 #afterLoad {
+    color: #000000;
     display: block;
     background-image: linear-gradient(to top right, #FB872B, #D9E021);
     height: 100vh;
+}
+
+.batDeath {
+    padding: 60px;
+    color: #ffffff;
+    background-color: #000000;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: none;
+    justify-content: center;
+    align-content: center;
 }
 
 .header {
@@ -174,13 +187,25 @@ a, a:hover, a:visited, a:active, a:link {
     color: #f5f5f5
 }
 
+.forager {
+    background-image: linear-gradient(to top right, #414141, #000000);
+    background-size: 100%;
+}
+
+.color {
+    background-image: linear-gradient(to top right, #45145A, #FF5300);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 .quickBar {
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    background:  #f5f5f5;
+    background:  #cfcfcf;
     height: 125px;
     width: 100%;
     padding-top: 13px;
@@ -188,8 +213,7 @@ a, a:hover, a:visited, a:active, a:link {
 
 #quickBar {
     display: block;
-    box-shadow: 0px -1px 5px -1px rgba(0,0,0,0.75);
-    display: none;
+    box-shadow: 0px -1px 5px -1px rgba(0,0,0,0.50);
 }
 
 .toast {
@@ -226,4 +250,19 @@ a, a:hover, a:visited, a:active, a:link {
 }
 .swing {
     transform-origin: bottom left;
+}
+
+.large {
+    font-size: 10rem;
+    color: #f5f5f5;
+}
+
+@media only screen and (max-width: 630px) {
+    .main {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .appCont {
+        padding-bottom: 15px;
+    }
 }

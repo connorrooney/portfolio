@@ -1,0 +1,11 @@
+#############################
+#---------#ADDED#-----------#
+#############################
+
++Icon Styling - Background & text gradients, Font-Awesome, Animate.css animations (slight changes to thier css) Animations played on hover.
++Toasts - built toast from scratch. Hovering on icons will display a toast to show more information about that project. toasts also work on mobile. single&double tap.
++Links - Respective links added to each icon, leading to where the project is stored 
++Easter Egg - added a easter egg for fun.
++Mobile Responsive - site is compatible and keeps stying on all screen sizes
+
+

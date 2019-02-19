@@ -10,6 +10,13 @@ const toastDesc = document.getElementById("toastDesc");
 const toastIcon = document.getElementById("toastIcon")
 const close = document.getElementById("close");
 
+const miniR = document.getElementById("miniR");
+let batLv = 100;
+const batLvTxt = document.getElementById("eeBatLevel");
+const batIcon = document.getElementById("eeBat");
+const batDeath = document.getElementById("batDeath");
+const batDeathBat = document.getElementById("batDeathBat");
+
 const gitHub = document.getElementById("gitHub");
 const mail = document.getElementById("mail");
 const mailIcon = document.getElementById("mailIcon");
@@ -22,8 +29,9 @@ const keyCodeIcon = document.getElementById("keyCodeIcon");
 const cyberPet = document.getElementById("cyberPet");
 const cyberPetIcon = document.getElementById("cyberPetIcon");
 const jsClock = document.getElementById("jsClock");
+const forager = document.getElementById("forager");
 
-
+batLvTxt.textContent = batLv;
 
 //"Lock Screen" activator
 preLoad.addEventListener("click", () => {
@@ -65,9 +73,62 @@ function diceRoller() {
     return side[roll];
 }
 
-function whackAmole() {
+//Easter Eggs
+let countDwn;
 
+function batDrain() {
+    if(batLv > 0){
+        batLv--;
+        batLvTxt.textContent = batLv;
+        batIconSw();
+    } else {
+        batDisplay();
+        batDeathIcon();
+    }
 }
+
+function batIconSw() {
+    if(batLv >= 75) {
+        batIcon.className = "fas fa-battery-full";
+    } else if (batLv >= 50 ) {
+        batIcon.className = "fas fa-battery-three-quarters";
+    } else if (batLv >= 25 ) {
+        batIcon.className = "fas fa-battery-half";
+    } else if (batLv >= 5 ) {
+        batIcon.className = "fas fa-battery-quarter";
+    } else if (batLv >= 4 ) {
+        batIcon.className = "fas fa-battery-empty";
+    }
+}
+
+function batDeathIcon() {
+    batDeathBat.className = "fas fa-battery-empty animated flash"
+    setTimeout(() => {batDeathBat.className = "fas fa-battery-quarter"}, 500);
+    setTimeout(() => {batDeathBat.className = "fas fa-battery-half"}, 750);
+    setTimeout(() => {batDeathBat.className = "fas fa-battery-three-quarters"}, 1000);
+    setTimeout(() => {batDeathBat.className = "fas fa-battery-full"}, 1250);
+    setTimeout(() => {
+        preLoad.style.display = "block";
+        batDeath.style.display = "none";
+        batLv = 100;
+        batLvTxt.textContent = batLv;
+        batIcon.className = "fas fa-battery-full";
+    }, 1500);
+}
+
+function batDisplay() {
+    quickBar.style.display = "none";
+    batDeath.style.display = "grid";
+}
+
+miniR.addEventListener("mouseenter", () => {
+    countDwn = setInterval("batDrain()", 50);
+})
+    
+
+miniR.addEventListener("mouseleave", () => {
+    clearInterval(countDwn);
+})
 
 //Tool Tips
 function intro() {
@@ -166,5 +227,16 @@ jsClock.addEventListener("mouseenter", () => {
 })
 
 jsClock.addEventListener("mouseleave", () => {
+    toast.style.display = "none";
+})
+
+forager.addEventListener("mouseenter", () => {
+    toast.style.display = "block";
+    toastTitle.textContent = "forager"
+    toastDesc.textContent = "Coming Soon"
+    toastIcon.className = "fas fa-gem"
+})
+
+forager.addEventListener("mouseleave", () => {
     toast.style.display = "none";
 })

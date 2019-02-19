@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body onload="clockDisplay()">
+
+    <div class="batDeath" id=batDeath>
+      <h1 class=large><i id=batDeathBat class="fas fa-battery-empty"></i></h1>
+    </div>
+
       <div id=preLoad class=preload>
         <div class=mini>
             <div class=miniL>
@@ -19,7 +24,7 @@
             </div>
 
             <div class=miniR>
-                <p><span>72% </span><i class="fas fa-battery-three-quarters"></i></p>
+                <p><span>100% </span><i class="fas fa-battery-full"></i></p>
             </div>
         </div>
 
@@ -40,8 +45,8 @@
             <p><i class="fas fa-signal"></i><span id=carrier> Carrier </span><i class="fas fa-wifi"></i><p>
           </div>
 
-          <div class=miniR>
-              <p><span>72% </span><i class="fas fa-battery-three-quarters"></i></p>
+          <div class=miniR id=miniR>
+              <p><span id=eeBatLevel ></span>% <i id=eeBat class="fas fa-battery-full"></i></p>
           </div>
         </div>
         <div class="main animated zoomIn">
@@ -92,8 +97,8 @@
             </div>
 
             <div class=appCont>
-              <div class="app " id=gitHub></div>
-              <span class=appCap>Sample</span>
+              <div class="app forager" id=forager><i class="fas fa-gem color"></i></div>
+              <span class=appCap>forager</span>
             </div>
           </div>
         </div>
