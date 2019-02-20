@@ -256,3 +256,7 @@ aboutMe.addEventListener("mouseenter", () => {
     toastDesc.textContent = "Find out more about me on this page."
     toastIcon.className = "fas fa-info-circle amI"
 })
+
+aboutMe.addEventListener("mouseleave", () => {
+    toast.style.display = "none"
+})
