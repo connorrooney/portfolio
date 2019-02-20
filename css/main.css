@@ -100,7 +100,7 @@ a, a:hover, a:visited, a:active, a:link {
 
 .main {
     margin: 60px;
-    display: flex;
+    display: none;
     justify-content: space-evenly;
 }
 
@@ -266,3 +266,6 @@ a, a:hover, a:visited, a:active, a:link {
         padding-bottom: 15px;
     }
 }
+
+/*Toast Colors*/
+

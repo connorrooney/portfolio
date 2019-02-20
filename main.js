@@ -1,6 +1,7 @@
 const preLoad = document.getElementById("preLoad");
 const afterLoad = document.getElementById("afterLoad");
 const quickBar = document.getElementById("quickBar");
+const main = document.getElementById("main");
 const lock = document.getElementById("lock");
 const clock = document.getElementById("clock");
 const date = document.getElementById("date");
@@ -46,6 +47,7 @@ function display() {
     setTimeout(() => {preLoad.style.display = "none"}, 100)
     afterLoad.style.display = "block";
     quickBar.style.display = "block";
+    main.style.display = "flex";
 }
 
 function clockDisplay() {
@@ -117,6 +119,7 @@ function batDeathIcon() {
 }
 
 function batDisplay() {
+    main.style.display = "none";
     quickBar.style.display = "none";
     batDeath.style.display = "grid";
 }
