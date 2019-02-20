@@ -22,7 +22,7 @@ a, a:hover, a:visited, a:active, a:link {
 
 #afterLoad {
     color: #000000;
-    display: block;
+    display: none;
     background-image: linear-gradient(to top right, #FB872B, #D9E021);
     height: 100vh;
 }
@@ -192,13 +192,6 @@ a, a:hover, a:visited, a:active, a:link {
     background-size: 100%;
 }
 
-.color {
-    background-image: linear-gradient(to top right, #45145A, #FF5300);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
 .quickBar {
     position: absolute;
     bottom: 0;
@@ -228,14 +221,17 @@ a, a:hover, a:visited, a:active, a:link {
 }
 
 .toastHead {
-    border-bottom: 1px solid grey;
-    background: #f5f5f5;
+    background: #e8e8e8;
     padding-top: 6px;
     padding-left: 6px;
 }
 
 .toastBody {
     padding-left: 6px;
+}
+
+#toastTitle{
+    font-weight: 300;
 }
 
 #close {
@@ -269,3 +265,64 @@ a, a:hover, a:visited, a:active, a:link {
 
 /*Toast Colors*/
 
+.cbI {
+    background-image: linear-gradient(to top right, #ED213A, #93291E);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.kcI {
+    background-image: linear-gradient(to top right, #312A6C, #852D91);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.drI {
+    background-image: linear-gradient(to top right, #ED1C24, #FCEE21);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.mhI {
+    background-image: linear-gradient(to top right, #2E3192, #1BFFFF);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.clI {
+    background-image: linear-gradient(to top right, #009E00, #8Aff8A);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.ghI {
+    background-image: linear-gradient(to top right, #333333, #5A5454);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.mlI {
+    background-image: linear-gradient(to top right, #3A3897, #A3A1FF);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.amI {
+    background-image: linear-gradient(to top right, #F246F2, #EBC08D);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.frI {
+    background-image: linear-gradient(to top right, #45145A, #FF5300);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

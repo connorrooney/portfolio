@@ -31,6 +31,7 @@ const cyberPet = document.getElementById("cyberPet");
 const cyberPetIcon = document.getElementById("cyberPetIcon");
 const jsClock = document.getElementById("jsClock");
 const forager = document.getElementById("forager");
+const aboutMe = document.getElementById("aboutMe");
 
 batLvTxt.textContent = batLv;
 
@@ -110,6 +111,7 @@ function batDeathIcon() {
     setTimeout(() => {batDeathBat.className = "fas fa-battery-three-quarters"}, 1000);
     setTimeout(() => {batDeathBat.className = "fas fa-battery-full"}, 1250);
     setTimeout(() => {
+        preLoad.className = "preload";
         preLoad.style.display = "block";
         batDeath.style.display = "none";
         batLv = 100;
@@ -119,9 +121,13 @@ function batDeathIcon() {
 }
 
 function batDisplay() {
+    afterLoad.style.display = "none";
     main.style.display = "none";
     quickBar.style.display = "none";
     batDeath.style.display = "grid";
+    miniR.removeEventListener("mouseenter", () => {
+        countDwn = setInterval("batDrain()", 50);
+    })
 }
 
 miniR.addEventListener("mouseenter", () => {
@@ -150,7 +156,7 @@ gitHub.addEventListener("mouseenter", () => {
     toast.style.display = "block";
     toastTitle.textContent = "My GitHub"; 
     toastDesc.textContent = "Check out all my public repositories on my GitHub page.";
-    toastIcon.className = "fab fa-github";
+    toastIcon.className = "fab fa-github ghI";
 
 })
 
@@ -163,7 +169,7 @@ diceRoll.addEventListener("mouseenter", () => {
     toast.style.display = "block";
     toastTitle.textContent = "Dice Roller"
     toastDesc.textContent = "A dice rolling game avaliable in single and multi-player modes. Roll the dice and get to 20 to win!"
-    toastIcon.className = "fas fa-dice-five";
+    toastIcon.className = "fas fa-dice-five drI";
 })
 
 diceRoll.addEventListener("mouseleave", () => {
@@ -175,7 +181,7 @@ moleWhack.addEventListener("mouseenter", () => {
     toast.style.display = "block";
     toastTitle.textContent = "Whack-A-Mole";
     toastDesc.textContent = "A JavaScript version of the classic arcade game. Each hit increases the difficulty, can you keep up?"
-    toastIcon.className = "fas fa-gavel"
+    toastIcon.className = "fas fa-gavel mhI"
 })
 
 moleWhack.addEventListener("mouseleave", () => {
@@ -188,7 +194,7 @@ keyCode.addEventListener("mouseenter", () => {
     toast.style.display = "block";
     toastTitle.textContent = "KeyCode Generator";
     toastDesc.textContent = "Simple KeyCode generator, Input a key and it will return with the event codes."
-    toastIcon.className = "fas fa-keyboard"
+    toastIcon.className = "fas fa-keyboard kcI"
 })
 
 keyCode.addEventListener("mouseleave", () => {
@@ -201,7 +207,7 @@ cyberPet.addEventListener("mouseenter", () => {
     toast.style.display =  "block";
     toastTitle.textContent = "My Cyber Pet";
     toastDesc.textContent = "Your very own virtual pet. Use console commands to take care of your pet. Keep them alive for as long as possible.";
-    toastIcon.className = "fas fa-paw";
+    toastIcon.className = "fas fa-paw cbI";
 })
 
 cyberPet.addEventListener("mouseleave", () => {
@@ -214,7 +220,7 @@ mail.addEventListener("mouseenter", () => {
     toast.style.display = "block";
     toastTitle.textContent = "Get in touch"
     toastDesc.textContent = "If you have any questions about me or my work please email me by clicking the link."
-    toastIcon.className = "far fa-envelope"
+    toastIcon.className = "far fa-envelope mlI"
 })
 
 mail.addEventListener("mouseleave", () => {
@@ -226,7 +232,7 @@ jsClock.addEventListener("mouseenter", () => {
     toast.style.display = "block";
     toastTitle.textContent = "JavaScript Clock"
     toastDesc.textContent = "It tells the time and looks pretty, what else could you ask for?"
-    toastIcon.className = "far fa-clock"
+    toastIcon.className = "far fa-clock clI"
 })
 
 jsClock.addEventListener("mouseleave", () => {
@@ -237,9 +243,16 @@ forager.addEventListener("mouseenter", () => {
     toast.style.display = "block";
     toastTitle.textContent = "forager"
     toastDesc.textContent = "Coming Soon"
-    toastIcon.className = "fas fa-gem"
+    toastIcon.className = "fas fa-gem frI"
 })
 
 forager.addEventListener("mouseleave", () => {
     toast.style.display = "none";
+})
+
+aboutMe.addEventListener("mouseenter", () => {
+    toast.style.display = "block";
+    toastTitle.textContent = "About Me"
+    toastDesc.textContent = "Find out more about me on this page."
+    toastIcon.className = "fas fa-info-circle amI"
 })
