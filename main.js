@@ -71,7 +71,7 @@ function checkTime(i) {
 //App Animations
 function diceRoller() {
     let roll = Math.floor(Math.random() * 6);
-    let side = ["fas fa-dice-one", "fas fa-dice-two", "fas fa-dice-three", "fas fa-dice-four", "fas fa-dice-five", "fas fa-dice-six"];
+    let side = ["fas fa-dice-one drI", "fas fa-dice-two drI", "fas fa-dice-three drI", "fas fa-dice-four drI", "fas fa-dice-five drI", "fas fa-dice-six drI"];
     diceRollIcon.className = side[roll];
     return side[roll];
 }
