@@ -32,6 +32,15 @@ const cyberPetIcon = document.getElementById("cyberPetIcon");
 const jsClock = document.getElementById("jsClock");
 const forager = document.getElementById("forager");
 const aboutMe = document.getElementById("aboutMe");
+const aboutMeClk = document.getElementById("aboutMeClk");
+const aboutMePg = document.getElementById("aboutMePg");
+const home = document.getElementById("home");
+const drum = document.getElementById("drumKit");
+const weather = document.getElementById("weather");
+const weatherIcon = document.getElementById("weatherIcon");
+const chat = document.getElementById("chat");
+const flight = document.getElementById("flight");
+const flightIcon = document.getElementById("flightIcon")
 
 batLvTxt.textContent = batLv;
 
@@ -67,6 +76,21 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
 }
+
+//about:Me 
+
+aboutMeClk.addEventListener("click", () => {
+    main.style.display = "none"
+    aboutMePg.style.display = "block"
+    quickBar.style.display = "none"
+    toast.style.display = "none"
+})
+
+home.addEventListener("click", () => {
+    main.style.display = "flex"
+    aboutMePg.style.display = "none"
+    quickBar.style.display = "block"
+})
 
 //App Animations
 function diceRoller() {
@@ -121,6 +145,7 @@ function batDeathIcon() {
 }
 
 function batDisplay() {
+    lock.className = "fas fa-lock lock"
     afterLoad.style.display = "none";
     main.style.display = "none";
     quickBar.style.display = "none";
@@ -239,17 +264,6 @@ jsClock.addEventListener("mouseleave", () => {
     toast.style.display = "none";
 })
 
-forager.addEventListener("mouseenter", () => {
-    toast.style.display = "block";
-    toastTitle.textContent = "forager"
-    toastDesc.textContent = "Coming Soon"
-    toastIcon.className = "fas fa-gem frI"
-})
-
-forager.addEventListener("mouseleave", () => {
-    toast.style.display = "none";
-})
-
 aboutMe.addEventListener("mouseenter", () => {
     toast.style.display = "block";
     toastTitle.textContent = "About Me"
@@ -260,3 +274,50 @@ aboutMe.addEventListener("mouseenter", () => {
 aboutMe.addEventListener("mouseleave", () => {
     toast.style.display = "none"
 })
+
+drumKit.addEventListener("mouseenter", () => {
+    toast.style.display = "block";
+    toastTitle.textContent = "JavaScript Drum Kit"
+    toastDesc.textContent = "A Simple Js Drumkit, use the keys or click to make music."
+    toastIcon.className = "fas fa-drum dkI"
+})
+
+drumKit.addEventListener("mouseleave", () => {
+    toast.style.display = "none";
+})
+
+weather.addEventListener("mouseenter", () => {
+    weatherIcon.className = "fas fa-sun waI"
+    toast.style.display = "block";
+    toastTitle.textContent = "Weather Forecast"
+    toastDesc.textContent = "An example of using an API to grab data from an external source, enter a location and get the current forecast"
+    toastIcon.className = "fas fa-sun waI"
+})
+
+weather.addEventListener("mouseleave", () => {
+    toast.style.display = "none";
+})
+
+chat.addEventListener("mouseenter", () => {
+    toast.style.display = "block";
+    toastTitle.textContent = "Simple Chat"
+    toastDesc.textContent = "**********************WORK IN PROGRESS**********************";
+    toastIcon.className = "far fa-comment-dots";
+})
+
+chat.addEventListener("mouseleave", () => {
+    toast.style.display = "none";
+})
+
+ flight.addEventListener("mouseenter",  () => {
+    flightIcon.className = "fas fa-plane flI animated zoomOutRight"
+    toast.style.display = "block";
+    toastTitle.textContent = "Weather Forecast"
+    toastDesc.textContent = "A live flight tracker, planned, designed and build in 2 days as a part of a sprint challenge. Worked in a team of 3, using multiple API calls and React"
+    toastIcon.className = "fas fa-plane flI"
+ })
+
+ flight.addEventListener("mouseleave", () => {
+     flightIcon.className = "fas fa-plane flI animated zoomInLeft";
+     toast.style.display = "none";
+ })

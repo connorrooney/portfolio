@@ -180,9 +180,28 @@ a, a:hover, a:visited, a:active, a:link {
     color: #f5f5f5
 }
 
-.forager {
-    background-image: linear-gradient(to top right, #414141, #000000);
+.drumKit {
+    background-image: linear-gradient(to top right, #5C258D, #4389A2);
     background-size: 100%;
+    color: #f5f5f5
+}
+
+.weather {
+    background-image: linear-gradient(to top right, #36D1DC, #5B86E5);
+    background-size: 100%;
+    color: #f5f5f5
+}
+
+.chat {
+    background-image: linear-gradient(to top right, #FF416C, #FF4B2B);
+    background-size: 100%;
+    color: #f5f5f5 
+}
+
+.flight {
+    background-image: linear-gradient(to top right, #F5F5F5, #eeeeee);
+    background-size: 100%;
+    color: #f5f5f5 
 }
 
 .quickBar {
@@ -256,6 +275,42 @@ a, a:hover, a:visited, a:active, a:link {
     }
 }
 
+#aboutMePg {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/papertex2.png);
+    background-size: 400px;
+    background-repeat: repeat;
+    padding: 15px;
+    padding-top: 44px;
+}
+
+.abCont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.9fr;
+    grid-template-areas: "a" "b";
+}
+
+.abTop {
+    grid-area: a;
+}
+
+.abMain {
+    height: 100vh;
+    grid-area: b;
+}
+
+.abLnkTxt {
+    background-color: #ffd122;
+    color: transparent;
+    text-shadow: 0px -2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+}
+
 /*Toast Colors*/
 
 .cbI {
@@ -319,3 +374,28 @@ a, a:hover, a:visited, a:active, a:link {
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+.dkI {
+    background-image: linear-gradient(to top right, #5C258D, #4389A2);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.waI {
+    background-image: linear-gradient(to bottom left, #F7971E, #FFD200);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.flI {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,193,104,1) 0%, rgba(251,128,128,1) 90% );
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+
+/* Temp Timeline */
