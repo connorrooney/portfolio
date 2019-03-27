@@ -40,7 +40,10 @@ const weather = document.getElementById("weather");
 const weatherIcon = document.getElementById("weatherIcon");
 const chat = document.getElementById("chat");
 const flight = document.getElementById("flight");
-const flightIcon = document.getElementById("flightIcon")
+const flightIcon = document.getElementById("flightIcon");
+const todo = document.getElementById("todo");
+const movie = document.getElementById("movie")
+
 
 batLvTxt.textContent = batLv;
 
@@ -57,7 +60,7 @@ function display() {
     setTimeout(() => {preLoad.style.display = "none"}, 100)
     afterLoad.style.display = "block";
     quickBar.style.display = "block";
-    main.style.display = "flex";
+    main.style.display = "grid";
 }
 
 function clockDisplay() {
@@ -287,7 +290,7 @@ drumKit.addEventListener("mouseleave", () => {
 })
 
 weather.addEventListener("mouseenter", () => {
-    weatherIcon.className = "fas fa-sun waI"
+    weatherIcon.className = "fas fa-sun waI animated heartBeat slow infinite"
     toast.style.display = "block";
     toastTitle.textContent = "Weather Forecast"
     toastDesc.textContent = "An example of using an API to grab data from an external source, enter a location and get the current forecast"
@@ -295,29 +298,63 @@ weather.addEventListener("mouseenter", () => {
 })
 
 weather.addEventListener("mouseleave", () => {
+    weatherIcon.className = "fas fa-sun waI"
     toast.style.display = "none";
 })
 
 chat.addEventListener("mouseenter", () => {
     toast.style.display = "block";
     toastTitle.textContent = "Simple Chat"
-    toastDesc.textContent = "**********************WORK IN PROGRESS**********************";
-    toastIcon.className = "far fa-comment-dots";
+    toastDesc.textContent = "********************\n**WORK IN PROGRESS**\n********************";
+    toastIcon.className = "far fa-comment-dots caI";
 })
 
 chat.addEventListener("mouseleave", () => {
     toast.style.display = "none";
 })
 
- flight.addEventListener("mouseenter",  () => {
+flight.addEventListener("mouseenter",  () => {
     flightIcon.className = "fas fa-plane flI animated zoomOutRight"
     toast.style.display = "block";
-    toastTitle.textContent = "Weather Forecast"
+    toastTitle.textContent = "Flight Radar"
     toastDesc.textContent = "A live flight tracker, planned, designed and build in 2 days as a part of a sprint challenge. Worked in a team of 3, using multiple API calls and React"
     toastIcon.className = "fas fa-plane flI"
- })
+})
 
- flight.addEventListener("mouseleave", () => {
-     flightIcon.className = "fas fa-plane flI animated zoomInLeft";
-     toast.style.display = "none";
- })
+flight.addEventListener("mouseleave", () => {
+    flightIcon.className = "fas fa-plane flI animated zoomInLeft";
+    toast.style.display = "none";
+})
+
+todo.addEventListener("mouseenter", () => {
+    toast.style.display = "block";
+    toastTitle.textContent = "To-Do List"
+    toastDesc.textContent = "React Todo list, add and remove items.";
+    toastIcon.className = "fas fa-clipboard-list tdI";
+})
+
+todo.addEventListener("mouseleave", () => {
+    toast.style.display = "none";
+})
+
+movie.addEventListener("mouseenter", () => {
+    toast.style.display = "block";
+    toastTitle.textContent = "Movie Finder"
+    toastDesc.textContent = "Node.js example of using API's and displaying to a webpage";
+    toastIcon.className = "fas fa-film mvI";
+})
+
+movie.addEventListener("mouseleave", () => {
+    toast.style.display = "none";
+})
+
+social.addEventListener("mouseenter", () => {
+    toast.style.display = "block";
+    toastTitle.textContent = "Yellow Ducks"
+    toastDesc.textContent = "React team project, lead by me, creating a social network, working in teams of 5, currently in progress, check the code out on GitHub.";
+    toastIcon.className = "fas fa-code ydI";
+})
+
+socail.addEventListener("mouseleave", () => {
+    toast.style.display = "none"
+})
