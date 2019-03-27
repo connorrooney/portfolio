@@ -237,7 +237,7 @@ a, a:hover, a:visited, a:active, a:link {
 }
 
 .calc {
-    background-image: linear-gradient(to top right, #FFAFBD #ffc3a0);
+    background: #eeeeee;
     background-size: 100%;
     color: #f5f5f5 
 }

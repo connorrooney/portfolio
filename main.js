@@ -32,9 +32,6 @@ const cyberPetIcon = document.getElementById("cyberPetIcon");
 const jsClock = document.getElementById("jsClock");
 const forager = document.getElementById("forager");
 const aboutMe = document.getElementById("aboutMe");
-const aboutMeClk = document.getElementById("aboutMeClk");
-const aboutMePg = document.getElementById("aboutMePg");
-const home = document.getElementById("home");
 const drum = document.getElementById("drumKit");
 const weather = document.getElementById("weather");
 const weatherIcon = document.getElementById("weatherIcon");
@@ -42,7 +39,9 @@ const chat = document.getElementById("chat");
 const flight = document.getElementById("flight");
 const flightIcon = document.getElementById("flightIcon");
 const todo = document.getElementById("todo");
-const movie = document.getElementById("movie")
+const movie = document.getElementById("movie");
+const social = document.getElementById("social");
+const calc = document.getElementById("calc")
 
 
 batLvTxt.textContent = batLv;
@@ -79,21 +78,6 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
 }
-
-//about:Me 
-
-aboutMeClk.addEventListener("click", () => {
-    main.style.display = "none"
-    aboutMePg.style.display = "block"
-    quickBar.style.display = "none"
-    toast.style.display = "none"
-})
-
-home.addEventListener("click", () => {
-    main.style.display = "flex"
-    aboutMePg.style.display = "none"
-    quickBar.style.display = "block"
-})
 
 //App Animations
 function diceRoller() {
@@ -269,9 +253,9 @@ jsClock.addEventListener("mouseleave", () => {
 
 aboutMe.addEventListener("mouseenter", () => {
     toast.style.display = "block";
-    toastTitle.textContent = "About Me"
-    toastDesc.textContent = "Find out more about me on this page."
-    toastIcon.className = "fas fa-info-circle amI"
+    toastTitle.textContent = "LinkedIn."
+    toastDesc.textContent = "Check out my LinkedIn."
+    toastIcon.className = "fab fa-linkedin-in amI"
 })
 
 aboutMe.addEventListener("mouseleave", () => {
@@ -355,6 +339,17 @@ social.addEventListener("mouseenter", () => {
     toastIcon.className = "fas fa-code ydI";
 })
 
-socail.addEventListener("mouseleave", () => {
+social.addEventListener("mouseleave", () => {
     toast.style.display = "none"
+})
+
+calc.addEventListener("mouseenter", () => {
+    toast.style.display = "block";
+    toastTitle.textContent = "React Calculator"
+    toastDesc.textContent = "Very Simple React calculator";
+    toastIcon.className = "fas fa-calculator ccI";
+})
+
+calc.addEventListener("mouseleave", () => {
+    toast.style.display = "none";
 })
