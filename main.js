@@ -31,7 +31,7 @@ const cyberPet = document.getElementById("cyberPet");
 const cyberPetIcon = document.getElementById("cyberPetIcon");
 const jsClock = document.getElementById("jsClock");
 const forager = document.getElementById("forager");
-const aboutMe = document.getElementById("aboutMe");
+const linked = document.getElementById("linked");
 const drum = document.getElementById("drumKit");
 const weather = document.getElementById("weather");
 const weatherIcon = document.getElementById("weatherIcon");
@@ -251,15 +251,15 @@ jsClock.addEventListener("mouseleave", () => {
     toast.style.display = "none";
 })
 
-aboutMe.addEventListener("mouseenter", () => {
+linked.addEventListener("mouseenter", () => {
     toast.style.display = "block";
-    toastTitle.textContent = "LinkedIn."
-    toastDesc.textContent = "Check out my LinkedIn."
+    toastTitle.textContent = "LinkedIn"
+    toastDesc.textContent = "Checkout my LinkedIn here!"
     toastIcon.className = "fab fa-linkedin-in amI"
 })
 
-aboutMe.addEventListener("mouseleave", () => {
-    toast.style.display = "none"
+linked.addEventListener("mouseleave", () => {
+    toast.style.display = "none";
 })
 
 drumKit.addEventListener("mouseenter", () => {

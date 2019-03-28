@@ -364,7 +364,7 @@ a, a:hover, a:visited, a:active, a:link {
     text-align: center;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-content: center;
     justify-content: center;
 }
@@ -381,42 +381,6 @@ a, a:hover, a:visited, a:active, a:link {
     .appCont {
         padding-bottom: 15px;
     }
-}
-
-#aboutMePg {
-    display: none;
-    height: 100%;
-    width: 100%;
-    background-image: url(../img/papertex2.png);
-    background-size: 400px;
-    background-repeat: repeat;
-    padding: 15px;
-    padding-top: 44px;
-}
-
-.abCont {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.9fr;
-    grid-template-areas: "a" "b";
-}
-
-.abTop {
-    grid-area: a;
-}
-
-.abMain {
-    height: 100vh;
-    grid-area: b;
-}
-
-.abLnkTxt {
-    background-color: #ffd122;
-    color: transparent;
-    text-shadow: 0px -2px 3px rgba(255,255,255,0.5);
-    -webkit-background-clip: text;
-       -moz-background-clip: text;
-            background-clip: text;
 }
 
 /*Toast Colors*/
@@ -539,4 +503,32 @@ a, a:hover, a:visited, a:active, a:link {
     -webkit-background-clip: text;
 }
 
-/* Temp Timeline */
+/* TechStack Colors */
+
+.htmlI {
+    color: #E34C26;
+}
+
+.cssI {
+    color: #1572B6;
+}
+
+.jsI {
+    color: #F7DF1C;
+}
+
+.reactI {
+    color: #61dbfb;
+}
+
+.gitI {
+    color: #F04F33;
+}
+
+.adobeI {
+    color: #ED1A23
+}
+
+.nodeI {
+   color: #68a163;
+}
