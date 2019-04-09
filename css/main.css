@@ -357,6 +357,7 @@ a, a:hover, a:visited, a:active, a:link {
     color: #000000;
     text-align: left;
     padding: 7px;
+    height: 140px;
 }
 
 .techstack {
@@ -365,23 +366,25 @@ a, a:hover, a:visited, a:active, a:link {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .techstack i{
     margin: 5px;
 }
 
-@media only screen and (max-width: 630px) {
-    .main {
-        flex-wrap: wrap;
-        justify-content: space-between;
+@media only screen and (max-width: 727px) {
+    .notificationCont {
+        width: 400px;
     }
-    .appCont {
-        padding-bottom: 15px;
+
+    .notificationHead {
+        grid-template-columns: 40px 360px;
     }
 }
+
 
 /*Toast Colors*/
 
