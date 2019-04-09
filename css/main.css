@@ -388,6 +388,11 @@ a, a:hover, a:visited, a:active, a:link {
 @media only screen and (max-width: 420px) {
     .notificationCont {
         width: 350px;
+        height: 150px;
+    }
+
+    .notificationBody {
+        height: 120px;
     }
 
     .notificationHead {
