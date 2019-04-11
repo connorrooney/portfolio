@@ -383,6 +383,19 @@ a, a:hover, a:visited, a:active, a:link {
     .notificationHead {
         grid-template-columns: 40px 360px;
     }
+
+    .main {
+        margin: 30px;
+        grid-template-columns: "1fr 1fr 1fr";
+        grid-template-rows: "1fr 1fr 1fr 1fr 1fr 1fr";
+        grid-template-areas: ". . . . " ". . . . " ". . . . " ". . . . " ". . . . " ". . . . ";
+        justify-content: space-evenly;
+    }
+
+    .appCont {
+        margin: -2px;
+        margin-top: 10px;
+    }
 }
 
 @media only screen and (max-width: 420px) {
