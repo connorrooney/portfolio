@@ -90,6 +90,7 @@ a, a:hover, a:visited, a:active, a:link {
     position: absolute;
     right: 0.5%;
     top: 0.5%;
+    margin-right: 5px;
 }
 
 .miniL {
@@ -141,6 +142,7 @@ a, a:hover, a:visited, a:active, a:link {
 
 .appCap {
     grid-area: t;
+    margin-bottom:20px;
 }
 
 .gitHub {
@@ -386,7 +388,7 @@ a, a:hover, a:visited, a:active, a:link {
 
     .main {
         margin: 30px;
-        grid-template-columns: "1fr 1fr 1fr";
+        grid-template-columns: "1fr 1fr 1fr 1fr";
         grid-template-rows: "1fr 1fr 1fr 1fr 1fr 1fr";
         grid-template-areas: ". . . . " ". . . . " ". . . . " ". . . . " ". . . . " ". . . . ";
         justify-content: space-evenly;
@@ -410,6 +412,15 @@ a, a:hover, a:visited, a:active, a:link {
 
     .notificationHead {
         grid-template-columns: 40px 310px;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .main {
+        margin: 15px;
+        grid-template-columns: "1fr 1fr 1fr";
+        grid-template-rows: "1fr 1fr 1fr 1fr 1fr 1fr 1fr";
+        grid-template-areas: ". . . " " . . . " ". . . " ". . . " ". . . " ". . . " ". . . "
     }
 }
 
